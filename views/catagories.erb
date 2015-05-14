@@ -1,0 +1,18 @@
+<h1>Catagories:</h1>
+
+<% @catagories.each() do |catagory| %>
+    <li><a href = "/catagory/<%= catagory.id() %>"><%= catagory.name() %></a></li>
+<% end %>
+
+<form action="/catagory" method="post">
+  <label for="name">Enter catagory:</label>
+  <input id="name" name="name" type="text">
+  <button type="submit">Add</button>
+</form>
+
+<form>
+  <br>
+    <div class="form-group">
+      <a href="/" class="btn btn-info" role="button">Home</a>
+    </div>
+</form>
